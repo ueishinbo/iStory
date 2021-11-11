@@ -7,7 +7,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+
+import com.example.iStory.database.Section;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +26,9 @@ public class MultiSectionDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_section_details);
         nextSection = findViewById(R.id.nextSectionRecyclerView);
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < 1000; i++) {
-            list.add("Section Headings " + i);
+        List<Section> list = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            list.add(new Section(12,34,"string","string","string","string",98));
         }
         recyclerviewAdapter = new RecyclerviewAdapter(this, list);
         nextSection.setLayoutManager(new LinearLayoutManager(this));
@@ -47,4 +50,9 @@ public class MultiSectionDetailsActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
+
 }

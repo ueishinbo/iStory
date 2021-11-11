@@ -1,20 +1,32 @@
 package com.example.iStory;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
 
+import com.example.iStory.database.CRUD;
+import com.example.iStory.database.Section;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HomePageActivity extends AppCompatActivity {
     private ViewPager2 viewPager;
@@ -22,11 +34,16 @@ public class HomePageActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private ArrayList<Fragment> fgLists = new ArrayList<>(3);
 
+    //MXY: use SharedPreferences file to store tags, which have been set by developers. We can also save user info in this file for a easy fetch globally
+    private final String PREFS_NAME="MyLightDatabase";
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+
         viewPager = (ViewPager2) findViewById(R.id.viewpager);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
         //取消滑动
@@ -82,9 +99,9 @@ public class HomePageActivity extends AppCompatActivity {
         });
 
 
-        fgLists.add(new HomeFragment());
-        fgLists.add(new PostFragment());
-        fgLists.add(new PersonalFragment());
+        fgLists.add(new AllFragment.HomeFragment());
+        fgLists.add(new AllFragment.PostFragment());
+        fgLists.add(new AllFragment.PersonalFragment());
         //adapter 设置viewpager2内容
         FragmentStateAdapter fragmentStateAdapter = new FragmentStateAdapter(this) {
             @NonNull
@@ -107,7 +124,9 @@ public class HomePageActivity extends AppCompatActivity {
         });
 
 
-
     }
+
+
+
 
 }

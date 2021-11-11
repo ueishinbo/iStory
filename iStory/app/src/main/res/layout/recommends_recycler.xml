@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/sectionNameTextView"
+            android:id="@+id/sectionHeadingTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="40dp"
@@ -29,7 +29,7 @@
             android:textSize="34sp" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/sectionTagTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="40dp"
@@ -37,7 +37,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/sectionContentTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="40dp"
@@ -50,7 +50,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/sectionTimeTextView"
                 android:layout_width="508dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

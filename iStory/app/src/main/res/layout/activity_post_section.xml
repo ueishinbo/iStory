@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -67,6 +67,8 @@
             android:id="@+id/textView38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="756dp"
+            android:layout_marginBottom="564dp"
             android:text="Tag"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -91,7 +93,7 @@
             app:layout_constraintVertical_bias="0.081" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/sectionHeadingpost"
             android:layout_width="551dp"
             android:layout_height="75dp"
             android:layout_marginTop="36dp"
@@ -108,20 +110,20 @@
             android:id="@+id/scrollView3"
             android:layout_width="725dp"
             android:layout_height="241dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView39"
             app:layout_constraintTop_toBottomOf="@+id/textView39">
 
             <EditText
-                android:id="@+id/editTextTextMultiLine2"
+                android:id="@+id/sectionContentpost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="Pumas are large, cat-like animals which are found in America. When reports came into London Zoo that a wild puma had been spotted forty-five miles south of London, they were not taken seriously. However, as the evidence began to accumulate, experts from the Zoo felt obliged to investigate, for the descriptions given by people who claimed to have seen the puma were extraordinarily similar.  The hunt for the puma began in a small village where a woman picking blackberries saw 'a large cat' only five yards away from her. It immediately ran away when she saw it, and experts confirmed that a puma will not attack a human being unless it is cornered. The search proved difficult, for the puma was often observed at one place in the morning and at another place twenty miles away in the evening. Wherever it went, it left behind it a trail of dead deer and small animals like rabbits. Paw prints were seen in a number of places and puma fur was found clinging to bushes. Several people complained of &quot;cat-like noises' at night and a businessman on a fishing trip saw the puma up a tree. The experts were now fully convinced that the animal was a puma, but where had it come from? As no pumas had been reported missing from any zoo in the country, this one must have been in the possession of a private collector and somehow managed to escape. The hunt went on for several weeks, but the puma was not caught. It is disturbing to think that a dangerous wild animal is still at large in the quiet countryside." />
+                android:text="activity_post_section" />
         </ScrollView>
 
         <TextView
@@ -132,10 +134,10 @@
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.028"
             app:layout_constraintStart_toStartOf="@+id/textView38"
             app:layout_constraintTop_toBottomOf="@+id/textView38"
-            app:layout_constraintVertical_bias="0.055" />
+            app:layout_constraintVertical_bias="0.083" />
 
         <Button
             android:id="@+id/postBtn3"
@@ -149,6 +151,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.852" />
+
+        <Spinner
+            android:id="@+id/sectiontagspinner"
+            android:layout_width="896dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="351dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
