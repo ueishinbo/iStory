@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Download/iStory-new/iStory-master/app/src/main/res/layout/activity_regisiter.xml" value="0.2046875" />
+        <entry key="..\:/Download/iStory-new/iStory-master/app/src/main/res/layout/activity_section_detail.xml" value="0.1" />
+        <entry key="..\:/Users/LYX/Desktop/iStory-master/app/src/main/res/layout/activity_post_section.xml" value="0.20027434842249658" />
+        <entry key="..\:/Users/LYX/Desktop/iStory-master/app/src/main/res/layout/activity_story_detail.xml" value="0.10805230557467309" />
+        <entry key="..\:/Users/LYX/Desktop/iStory-master/app/src/main/res/layout/recommends_recycler.xml" value="0.2533532041728763" />
+        <entry key="..\:/self/Android/iStory/app/src/main/res/layout/recommends_recycler.xml" value="0.10855263157894737" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout-v14/activity_home.xml" value="0.11842105263157894" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_home.xml" value="0.16" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_home_page.xml" value="0.21173469387755103" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_multi_section_details.xml" value="0.2" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_personal_setting.xml" value="0.2" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_post_section.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_regisiter.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_section_detail.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/activity_story_detail.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/add_page.xml" value="0.1318530701754386" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/all_fragment.xml" value="0.176" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/directory_recycler.xml" value="0.14884868421052633" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/home.xml" value="0.2" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/home_page.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/personal_page.xml" value="0.2" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/post_page.xml" value="0.2" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/recommends.xml" value="0.4" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/recommends_fragment.xml" value="0.2" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/layout/recommends_recycler.xml" value="0.264" />
+        <entry key="..\:/self/Android/projectTest/app/src/main/res/menu/home_bottom_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
