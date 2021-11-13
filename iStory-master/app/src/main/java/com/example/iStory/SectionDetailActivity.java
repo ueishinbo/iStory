@@ -33,8 +33,8 @@ public class SectionDetailActivity extends AppCompatActivity {
         backBtn=findViewById(R.id.backBtn);
         section_content=findViewById(R.id.sectionDetail_content);
         section_heading=findViewById(R.id.sectionDetail_heading);
-        section_detail_time=findViewById(R.id.section_detail_time);
-        section_detail_author=findViewById(R.id.section_detail_author);
+        //section_detail_time=findViewById(R.id.section_detail_time);
+        //section_detail_author=findViewById(R.id.section_detail_author);
 
         //receive intent from PostFragment
         Bundle bundle=getIntent().getExtras();
@@ -43,8 +43,8 @@ public class SectionDetailActivity extends AppCompatActivity {
         }
         section_content.setText(new_section.getSection_content());
         section_heading.setText(new_section.getSection_heading());
-        section_detail_author.setText(String.valueOf(new_section.getAuthor_ID()));
-        section_detail_time.setText(new_section.getTime());
+        //section_detail_author.setText(String.valueOf(new_section.getAuthor_ID()));
+        //section_detail_time.setText(new_section.getTime());
 
         //故事详情
         detailBtn.setOnClickListener(new View.OnClickListener() {

@@ -11,9 +11,9 @@ import java.util.UUID;
 
 public class DB {
     private static String diver = "com.mysql.jdbc.Driver";
-    private static String url = "jdbc:mysql://10.0.2.2:3306/istory";
-    private static String user = "root";//用户名
-    private static String password = "Ux8mgUYj";//密码
+    private static String url = "jdbc:mysql://127.0.0.1:3306/yuxunren18";
+    private static String user = "YuxuanRen18";//用户名
+    private static String password = "123";//密码
 
     /*
      * 连接数据库

@@ -7,7 +7,7 @@
     tools:context=".RegisterActivity">
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/confirmPasswordField"
         android:layout_width="402dp"
         android:layout_height="64dp"
         android:ems="10"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.179" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/userNameField"
         android:layout_width="400dp"
         android:layout_height="62dp"
         android:ems="10"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.339" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/passwordField"
         android:layout_width="400dp"
         android:layout_height="62dp"
         android:ems="10"

@@ -17,7 +17,7 @@ public class ViewStoryText extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_viewstorytext);
+        setContentView(R.layout.activity_view_story_text);
         back=findViewById(R.id.storytextback);
         storyHeading=findViewById(R.id.storyHeading);
         storyText=findViewById(R.id.storyText);
