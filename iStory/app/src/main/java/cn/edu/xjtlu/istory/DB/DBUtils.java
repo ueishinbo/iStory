@@ -70,14 +70,22 @@ public class DBUtils {
         return user;
     }
 
-    public static Boolean createUser(String userId, String name, String password) {
+    public static Boolean createUser(int userId, String name, String password) {
+        System.out.println("传过来的参数为" + userId + " " + name + " " + password);
         Connection connection = getConn();
+        System.out.println("与数据库建立连接成功");
+        String sql = "INSERT INTO user(user_id) VALUES (?)";
         try {
-            String sql = "insert into user(user_id,username,password) value(\'"+userId+"\', \'"+name+"\', \'"+"\',  \'"+password+"\')";
+           /* String sql = "insert into user(user_id,username,password) value(\'"+userId+"\', \'"+name+"\', \'"+"\',  \'"+password+"\')";
             PreparedStatement pst = connection.prepareStatement(sql);
             System.out.println("插入的用户名是" + name);
-/*            pst.setString(1,userId);
+*//*            pst.setString(1,userId);
             pst.setString(2,name);
+            pst.setString(3,password);*/
+            PreparedStatement pst = connection.prepareStatement(sql);
+            System.out.println("插入的用户名是" + name+"插入的userid是" + userId);
+            pst.setInt(1,userId);
+            /*pst.setString(2,name);
             pst.setString(3,password);*/
             pst.executeUpdate();
             pst.close();

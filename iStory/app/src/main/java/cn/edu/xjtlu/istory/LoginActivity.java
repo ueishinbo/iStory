@@ -32,6 +32,7 @@ class DBThread implements Runnable{
         if (userObj != null){
             System.out.println("数据库中的用户名为:"+ userObj.getUserName() + "," + "数据库中的密码为:" + userObj.getPassword());
             if(userName.equals(userObj.getUserName())&&password.equals(userObj.getPassword())){
+                System.out.println("验证成功");
                 isExist = true;
             }else {
                 isExist = false;
